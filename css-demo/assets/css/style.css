@@ -1,0 +1,25 @@
+/* Style for css-demo*/
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+  font-family: 'Gabarito', cursive;
+  }
+  
+  body{
+    background-color:turquoise;
+  }
+  
+  /************************Global Styles*********************/
+  body {
+  font-family: 'Tenor Sans', sans-serif;
+  }
