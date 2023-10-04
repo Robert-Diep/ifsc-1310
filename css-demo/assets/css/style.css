@@ -16,10 +16,82 @@ html {
   }
   
   body{
-    background-color:turquoise;
+    background-color:white;
   }
   
   /************************Global Styles*********************/
   body {
-  font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin:0;
   }
+
+  header.primary{
+    background-color:#f98a02;
+    color:#b3157f;
+    text-shadow: .8px .8px #b3157f;
+    text-align: center;
+    padding:40px;
+/*long form
+padding-top: 40px;
+padding-right: 40px;
+padding-bottom: 40px;
+padding-left: 40px; */
+/* T,R,B,L 
+padding: 20px 40px 20px 40px;  
+-Two Value Top/Bottom / L/R 
+padding: 20px 40px;  */
+  }
+
+  header.primary h1{
+    font-size: 2.5rem;
+    margin:20px 0 0px;
+  }
+
+  header.primary h1 a{
+    color:#b3157f;
+    text-decoration:none; /*takes away the underline on h1 title*/
+  }
+  
+  header.primary h2{
+    font-size:1.5rem;
+    margin:0;
+  }
+
+  header.primary nav{
+    max-width:900px;
+    margin: 20px auto;/*makes it stay centered even when page is adusted*/
+  }
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;/*row,rowreverse,column,columnreverse*/
+  justify-content:space-evenly;/*speaces links in nav evenly*/
+  padding:0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;/*takes away bullet points next to link in nav*/
+}
+
+header.primary nav ul li a{
+  color:#b3157f;
+  background-color: black;
+  background-color: rgba(0,0,0,.8);
+  text-decoration: none;
+  padding:5px 10px;
+  border:1px solid #b3157f;
+  border-radius: 20px 50px;
+  transition:.2s;
+}
+
+header.primary nav ul li a:hover{
+  background-color: rgba(0,0,0,5);
+}
+
+  section.container{
+    color:#b3157f;
+    background-color: #f98a02;
+  }
+
+
+
