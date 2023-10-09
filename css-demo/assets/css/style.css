@@ -19,6 +19,21 @@ html {
     background-color:white;
   }
   
+
+/******************Responsive Images****************/
+
+img{
+  max-width: 100px
+  heightauto;
+}
+
+  /********************Utility Classes*************/
+
+  .container{
+    max-width: 90vw;
+    margin:auto;
+  }
+
   /************************Global Styles*********************/
   body {
     font-family: 'Encode Sans Condensed', sans-serif;
@@ -44,7 +59,7 @@ padding: 20px 40px;  */
 
   header.primary h1{
     font-size: 2.5rem;
-    margin:20px 0 0px;
+    margin:0;
   }
 
   header.primary h1 a{
@@ -65,7 +80,7 @@ padding: 20px 40px;  */
 header.primary nav ul{
   display:flex;
   flex-direction:row;/*row,rowreverse,column,columnreverse*/
-  justify-content:space-evenly;/*speaces links in nav evenly*/
+  justify-content:space-around;/*speaces links in nav evenly*/
   padding:0;
 }
 
@@ -88,10 +103,94 @@ header.primary nav ul li a:hover{
   background-color: rgba(0,0,0,5);
 }
 
-  section.container{
-    color:#b3157f;
-    background-color: #f98a02;
+#intro{
+  background-color: white;
+  border:1px solid black;
+  margin:auto;
+  padding-bottom: 20px;
+}
+
+#intro h2{
+  border-bottom:1px solid black;
+}
+
+#content{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.8);
+  padding:10px;
+  border-radius: 4px;
+  font-size:.8rem;
+  transition:0.5s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+article.post figure{
+  margin:0;
+}
+
+time.post-date, article.post figcaption,
+article.post .post-meta
+{
+  text-transform: uppercase;
+  color:black;
+}
+
+article.post a{
+  color:#b3157f;
+}
+
+article.post a:hover{
+  text-align: none;
+}
+
+article.post img{
+  border:1px solid orange;
+  padding:2px;
+  margin:10px auto;
+}
+
+aside[role="complementary"]{
+  color:red;
+}
+aside h2{
+  color:black;
+  border-bottom:1px dotted black;
+}
+
+aside .container{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+
+
+/******************Media Queries********************/
+
+@media screen and(max-width:600px){
+
+  header.primary nav ul{
+    flex-direction: column;
+    max-width:250px;
+    margin:auto;
+    gap:10px;
   }
+  
+  header.primary nav ul{
+    display:block;
+  }
+
+  }
+
+
 
 
 
