@@ -23,8 +23,8 @@ html {
 /******************Responsive Images****************/
 
 img{
-  max-width: 100px
-  heightauto;
+  max-width: 100%;
+  height:auto;
 }
 
   /********************Utility Classes*************/
@@ -46,6 +46,7 @@ img{
     text-shadow: .8px .8px #b3157f;
     text-align: center;
     padding:40px;
+  }
 /*long form
 padding-top: 40px;
 padding-right: 40px;
@@ -55,7 +56,7 @@ padding-left: 40px; */
 padding: 20px 40px 20px 40px;  
 -Two Value Top/Bottom / L/R 
 padding: 20px 40px;  */
-  }
+
 
   header.primary h1{
     font-size: 2.5rem;
