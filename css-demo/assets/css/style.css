@@ -34,10 +34,21 @@ img{
     margin:auto;
   }
 
+  .img-right{
+    float:right;
+    margin:10px 0 10px 20px;
+    border:1px solid orange;
+    padding:5px;
+    background-color:red;
+  }
+
   /************************Global Styles*********************/
   body {
     font-family: 'Encode Sans Condensed', sans-serif;
     margin:0;
+    background-image:url("../img/bloo.webp");
+    background-repeat:no-repeat;
+    background-size:contain;
   }
 
   header.primary{
@@ -158,8 +169,14 @@ article.post img{
   margin:10px auto;
 }
 
-aside[role="complementary"]{
+#practice h2{
   color:red;
+  border-bottom:1px dotted black;
+}
+
+aside[role="complementary"]{
+  background-color: orange;
+  color:black;
 }
 aside h2{
   color:black;
@@ -172,6 +189,25 @@ aside .container{
   gap:10px;
 }
 
+aside .container a:last-of-type{
+  color:blue;
+  display:block;
+  text-align:right;
+  font-size:.8rem;
+  margin:10px;
+}
+
+aside footer{
+  display:none;
+}
+
+#colophon{
+  background-color: #f98a02;
+  padding:2px;
+  color:red;
+  text-align:center;
+}
+
 
 
 /******************Media Queries********************/
@@ -180,13 +216,18 @@ aside .container{
 
   header.primary nav ul{
     flex-direction: column;
-    max-width:250px;
+    max-width: 250px;
     margin:auto;
     gap:10px;
   }
   
   header.primary nav ul{
     display:block;
+  }
+
+  #content{
+    flex-direction:column;
+    margin:auto;
   }
 
   }
