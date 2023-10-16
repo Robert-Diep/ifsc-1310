@@ -39,14 +39,14 @@ img{
     margin:10px 0 10px 20px;
     border:1px solid orange;
     padding:5px;
-    background-color:red;
+    background-color:#f98a02;
   }
 
   /************************Global Styles*********************/
   body {
     font-family: 'Encode Sans Condensed', sans-serif;
     margin:0;
-    background-image:url("../img/bloo.webp");
+    background-image:url();
     background-repeat:no-repeat;
     background-size:contain;
   }
@@ -68,6 +68,10 @@ padding: 20px 40px 20px 40px;
 -Two Value Top/Bottom / L/R 
 padding: 20px 40px;  */
 
+header.primary{
+  background-color: #f98a02;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.8'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
 
   header.primary h1{
     font-size: 2.5rem;
@@ -172,6 +176,94 @@ article.post img{
 #practice h2{
   color:red;
   border-bottom:1px dotted black;
+}
+
+table{
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td:nth-child(n+2) {
+  text-align: right;
+  width:33%;
+}
+
+caption{
+  font-weight:bold;
+  margin:10px;
+}
+
+tr:nth-child(even){
+background-color: orange;
+}
+
+tr:hover{
+  background-color: blue;
+}
+
+th{
+  background-color: #f98a02;
+  padding: 10px;
+}
+
+td{
+  border:1px dotted black;
+  padding: 5px;
+}
+
+#practice ol{
+  clear:both;
+  list-style-type: lower-roman;
+}
+
+#practice ul{
+  list-style-type:upper-roman;
+}
+
+#practice ul ul{
+  list-style-type: lower-roman;
+}
+
+dl{
+
+}
+
+dt{
+  font-weight: bold;
+}
+
+dd+dt{
+  margin-top: 20px;
+}
+
+dd{
+  margin:0;
+}
+
+#practice h4{
+  border-left:5px solid #f98a02;
+  padding:5px 10px;
+}
+
+#practice blockquote{
+  margin: 3.7em auto;
+  padding: 2em;
+  background: linear-gradient(#f98a02, #f98a02) padding-box, url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/80625/sea.jpg) border-box  0 / cover;
+  border: 2em solid transparent;
+  box-shadow: 5px 3px 30px orange;
+  font-size: 1.4em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  line-height: 1.5;
+  width: 40%;
+}
+
+#practice blockquote cite{
+  display:block;
+  text-align: right;
+  font-size:.8rem;
+  margin-top:10px;
 }
 
 aside[role="complementary"]{
